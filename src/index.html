@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<style>
+  .btn1{
+    background: rgb(44,149,83);
+    background: linear-gradient(0deg, rgba(44,149,83,1) 35%, rgba(100,187,71,1) 100%);
+  }
+
+  .card1{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+</style>
+<!-- Remix Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Remix Icon -->
+
+<!-- Jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Jquery CDN -->
+<body>
+  
+    <!-- Navigation Bar -->
+     <div class="navbar w-full h-[80px] border-b-2 border-gray-500 flex justify-between items-center px-[20px]">
+        <div class="nav_left w-auto h-[100%] flex justify-between items-center gap-[50px]">
+            <div class="nav_left_1 w-auto h-[100%] flex justify-center items-center"><img src="./photo/nav_Icon.svg"  alt=""></div>
+            <div class="nav_left_2 w-auto px-[10px] h-[100%] hidden lg:flex justify-center items-center gap-[30px] text-xl">
+              <div class="text-[#5FB848]">Home</div>
+              <div class="">About</div>
+              <div class="">Contact</div>
+              <div class="">Testimonials</div>
+            </div>
+        </div>
+        <div class="nav_right w-auto h-[100%] px-[10px] flex justify-center items-center gap-[20px]">
+          <div class="w-auto h-[100%] flex justify-center items-center gap-[20px]">
+            <div class="text-2xl"><i class="ri-search-line"></i></div>
+            <div class="text-2xl"><i class="ri-shopping-cart-2-line"></i></div>
+            <div class="bg-[#494949] w-[110px] h-[40px] rounded-[50px]  justify-center items-center text-white hidden md:flex">Order Now</div>
+          </div>
+            
+          <div class="menu_bar w-auto h-[100%] lg:hidden flex justify-center items-center text-4xl px-[5px]">
+            <i class="ri-function-line"></i>
+          </div>
+        </div>  
+   </div>
+
+   <!-- Side Navbar -->
+   <div class="side_nav w-full h-auto flex justify-center items-center flex-col">
+    <div class="text-[#5FB848] w-full flex justify-center items-center py-[18px] hover:bg-black hover:text-white text-xl border-b-2 border-gray-500 ">Home</div>
+    <div class=" w-full flex justify-center items-center py-[18px] hover:bg-black hover:text-white text-xl border-b-2 border-gray-500 ">About</div>
+    <div class=" w-full flex justify-center items-center py-[18px] hover:bg-black hover:text-white text-xl border-b-2 border-gray-500 ">Contact</div>
+    <div class=" w-full flex justify-center items-center py-[18px] hover:bg-black hover:text-white text-xl border-b-2 border-gray-500 ">Testimonials</div>
+   </div>
+   <!-- Side Navbar -->
+    <!-- Navigation Bar -->
+
+    <!-- hero Section  -->
+    <div class="w-full h-[100vh] sm:h-[50vh] md:h-[50vh] lg:h-[80vh] flex flex-col sm:flex-row">
+      <div class="w-full h-[50%] sm:w-[50%] md:w-[50%] lg:w-[50%] sm:h-[100%]  flex justify-center items-center  order-5 sm:order-4">
+
+        <div class="w-[100%] h-[100%] lg:w-[90%] lg:h-[90%]  flex justify-center items-left flex-col pl-[10px] gap-[15px_0px]">
+           <div class="flex flex-col text-4xl md:text-5xl lg:text-6xl font-semibold">
+
+            <div>Just <span class="text-[#5FB848]">Eat healthy</span></div> 
+            <div>food to live a </div>
+            <div>healthier life </div>
+
+           </div>
+
+          <div class="text-xl sm:text-[17px] md:text-xl lg:text-xl text-[#181D19] w-[90%] sm:w-[100%] md:w-[85%] lg:w-[80%] text-left">
+            Enjoy a healthy life by eating healthy foods that have extraordinary flavors that make your life healthier for today and in the future
+          </div>
+          <div class="btn1 w-[120px] h-auto py-[7px] flex justify-center items-center rounded-[50px] text-white">Order Now</div>
+        </div>
+      
+      </div>
+      <div class="w-full h-[50%] sm:w-[50%] md:w-[50%] lg:w-[50%] sm:h-[100%] flex justify-center items-center  order-4 sm:order-5">
+      <img src="./photo/Hero_Section.svg" class="w-[100%] h-[100%]" alt="">
+      </div>
+    </div>
+    <!-- hero Section  -->
+
+    <!-- Section 1 -->
+     <div class="w-full h-auto py-[20px] flex justify-center items-center flex-col gap-[10px]">
+      <div class="text-4xl font-bold text-center">Why Choose US?</div>
+      <div class="text-[#3B433E] text-center text-xl px-[20px] font-semibold">Organic food is grown without the use of synthetic chemicals</div>
+     </div>
+    <!-- Section 1 -->
+
+    <!-- Section 2 -->
+     <div class="w-full h-auto  flex justify-center items-center gap-[25px_40px] flex-wrap px-[30px] py-[40px]">
+      <div class="card1 w-[250px] h-[300px] ">
+      
+        <div class="w-full h-[150px]  flex justify-center items-center">
+              <img src="./photo/c1.svg" alt="">
+        </div>
+        
+        <div class="w-full h-[150px]  flex flex-col justify-start gap-[10px_0px] items-center">
+          <div class="text-2xl font-bold text-center">
+            Easy to order
+          </div>
+          <div class="text-[#181D19] text-center px-[2px] text-xl">
+            foods include fresh produce, meats as well as processed
+          </div>
+        </div>
+
+      </div>
+      <div class="card1 w-[250px] h-[300px] ">
+      
+        <div class="w-full h-[150px]  flex justify-center items-center">
+              <img src="./photo/c2.svg" alt="">
+        </div>
+        
+        <div class="w-full h-[150px]  flex flex-col justify-start gap-[10px_0px] items-center">
+          <div class="text-2xl font-bold text-center">
+            Live Order
+          </div>
+          <div class="text-[#181D19] text-center px-[2px] text-xl">
+            Place your online Order easily and get the food instantly
+          </div>
+        </div>
+
+      </div>
+      <div class="card1 w-[250px] h-[300px] ">
+      
+        <div class="w-full h-[150px]  flex justify-center items-center">
+              <img src="./photo/c3.svg" alt="">
+        </div>
+        
+        <div class="w-full h-[150px]  flex flex-col justify-start gap-[10px_0px] items-center">
+          <div class="text-2xl font-bold text-center">
+            100% Organic
+          </div>
+          <div class="text-[#181D19] text-center px-[2px] text-xl">
+            Organic food is grown without the use of synthetic chemicals
+           </div>
+        </div>
+      </div>
+     </div>
+    <!-- Section 2 -->
+
+    <!-- Section 3 -->
+     <div class="w-full h-auto  flex justify-center items-center flex-wrap gap-[25px_35px] py-[30px]">
+      <div class="w-[220px] h-[120px]  flex justify-center items-center gap-[5px_20px] flex-col">
+        <div class="text-5xl font-bold">40+</div>
+        <div class="text-[#545454] text-2xl">Food Partners</div>
+      </div>
+      <div class="w-[220px] h-[120px]  flex justify-center items-center gap-[5px_20px] flex-col">
+        <div class="text-5xl font-bold">459+</div>
+        <div class="text-[#545454] text-2xl">Trusted Clients</div>
+      </div>
+      <div class="w-[220px] h-[120px]  flex justify-center items-center gap-[5px_20px] flex-col">
+        <div class="text-5xl font-bold">12k+</div>
+        <div class="text-[#545454] text-2xl">Order Online</div>
+      </div>
+    
+     </div>
+    <!-- Section 3 -->
+
+    <!-- Section 4 -->
+     <div class="w-full h-auto flex justify-center items-center flex-wrap gap-[0px_40px] px-[20px] md:px-[30px] py-[30px]">
+      <div class="w-[360px] h-[420px]  flex justify-center items-start flex-col order-3 md:order-3 pl-[20px] gap-[20px_0px]">
+        <div class="text-3xl font-bold">About US</div>
+        <div class="text-[19px] text-[#181D19]">Organic food is grown without the use of synthetic chemicals, such as human-made pesticides and fertilizers, and does not contain genetically modified organisms (GMOs). Organic foods include fresh produce, meats, and dairy products as well as processed foods such as crackers, drinks, and frozen meals.</div>
+        <div class="btn1 w-[120px] h-auto py-[7px] flex justify-center items-center rounded-[50px] text-white">Learn More</div>
+      </div>
+      <div class="w-[360px] h-auto  flex justify-center items-center order-2 md:order-4">
+        <img src="./photo/coll.svg" alt="">
+      </div>
+     </div>
+    <!-- Section 4 -->
+
+    <!-- Section 5 -->
+    <div class="w-full h-auto flex justify-center items-center flex-wrap gap-[0px_30px] px-[20px] md:px-[30px] py-[10px]">
+      <div class="w-[360px] h-[420px]  flex justify-center items-start flex-col order-3 md:order-5 pl-[20px] gap-[20px_0px]">
+        <div class="text-3xl font-bold">
+          <div class="">Fresh Vegetables</div>
+          <div class="">Every Day</div>
+        
+
+        </div>
+        <div class="text-[19px] text-[#181D19]">Healthy life as informed declared we enjoy the margaret. Joy horrible moreover man feelings own shy. Request norland neither mistake for yet. Between the for morning assured country believe.</div>
+        <div class="btn1 w-[120px] h-auto py-[7px] flex justify-center items-center rounded-[50px] text-white">Learn More</div>
+      </div>
+      <div class="w-[360px] h-auto  flex justify-center items-center order-2 md:order-4">
+        <img src="./photo/coll1.svg" alt="">
+      </div>
+     </div>
+    <!-- Section 5 -->
+
+    <!-- Section 6 -->
+    <div class="w-full h-auto flex justify-center items-center flex-wrap gap-[0px_30px] px-[20px] md:px-[30px] py-[20px]">
+      <div class="w-[360px] h-[420px]  flex justify-center items-start flex-col order-3 md:order-3 pl-[20px] gap-[20px_0px]">
+        <div class="text-3xl font-bold">
+          <div class=""> Cooked by the</div>
+          <div class="">Best Chefs</div>
+        </div>
+        <div class="text-[19px] text-[#181D19]">Believing neglected so so allowance existence departure in. In design active temper be uneasy.</div>
+        <div class="w-full h-auto flex justify-center items-start flex-col gap-[10px]">
+
+          <div class="flex justify-center items-center gap-[15px]">
+            <div class=""><img src="./photo/check_mark.svg" alt=""></div>
+            <div class="text-xl text-[#181D19]">A guaranteed delicious meal</div>
+          </div>
+          <div class="flex justify-center items-center gap-[15px]">
+            <div class=""><img src="./photo/check_mark.svg" alt=""></div>
+            <div class="text-xl text-[#181D19]">Food is guaranteed hygienic</div>
+          </div>
+          <div class="flex justify-center items-center gap-[15px]">
+            <div class=""><img src="./photo/check_mark.svg" alt=""></div>
+            <div class="text-xl text-[#181D19]">Cooked quickly</div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="w-[360px] h-auto  flex justify-center items-center order-2 md:order-4">
+        <img src="./photo/coll2.svg" class="w-[100%] h-[100%]" alt="">
+      </div>
+     </div>
+    <!-- Section 6 -->
+
+    <!-- Section 7 -->
+    <div class="w-full h-auto py-[20px] flex justify-center items-center flex-col gap-[10px]">
+      <div class="text-4xl font-bold text-center">Special Dishes for you</div>
+      <div class="text-[#3B433E] text-center text-xl px-[20px] font-semibold">Made with premium & 100% Organic ingredients</div>
+     </div>
+    <!-- Section 7 -->
+
+    <!-- Section 8 -->
+     <div class="w-full h-auto flex justify-center items-center gap-[30px_40px] flex-wrap px-[5px] py-[40px]">
+      <div class="card1 w-[270px] h-[370px]">
+        <div class="w-full h-[180px] flex justify-center items-center">
+          <img src="./photo/f1.svg" class="w-[100%] h-[100%]" alt="">
+        </div>
+        <div class="w-full h-[190px] flex justify-center items-center flex-col gap-[10px_0px]">
+          <div class="text-3xl font-bold">Green Salad</div>
+          <div class="text-[#181D19] text-xl px-[5px] text-center">A salad combined witha delicious cut of bacon and mixed with tasty and fresh sesome oil.</div>
+        </div>
+      </div>
+      <div class="card1 w-[270px] h-[370px]">
+        <div class="w-full h-[180px] flex justify-center items-center">
+          <img src="./photo/f2.svg" class="w-[100%] h-[100%]" alt="">
+        </div>
+        <div class="w-full h-[190px] flex justify-center items-center flex-col gap-[10px_0px]">
+          <div class="text-3xl font-bold">Beef Salad</div>
+          <div class="text-[#181D19] text-xl px-[5px] text-center">A salad combined witha delicious cut of bacon and mixed with tasty and fresh sesome oil.</div>
+        </div>
+      </div>
+      <div class="card1 w-[270px] h-[370px]">
+        <div class="w-full h-[180px] flex justify-center items-center">
+          <img src="./photo/f3.svg" class="w-[100%] h-[100%]" alt="">
+        </div>
+        <div class="w-full h-[190px] flex justify-center items-center flex-col gap-[10px_0px]">
+          <div class="text-3xl font-bold">Nut Salad</div>
+          <div class="text-[#181D19] text-xl px-[5px] text-center">A salad combined witha delicious cut of bacon and mixed with tasty and fresh sesome oil.</div>
+        </div>
+      </div>
+     </div>
+    <!-- Section 8 -->
+
+
+    <!-- Section 9 -->
+    <div class="w-full h-auto py-[30px] flex justify-center items-center">
+      <div class="btn1 w-[120px] h-auto py-[7px] flex justify-center items-center rounded-[50px] text-white">View All</div>
+    </div>
+    <!-- Section 9 -->
+
+    <!-- Section 10 -->
+    <div class="w-full h-auto py-[20px] flex justify-center items-center flex-col gap-[10px] pb-[20px]">
+      <div class="text-4xl font-bold text-center">Happy Clients Says</div>
+       </div>
+    <!-- Section 10 -->
+
+    <!-- Section 11 -->
+     <div class="w-full h-auto  flex justify-center items-center flex-wrap gap-[30px_40px] my-[25px] px-[20px]">
+
+      <div class="card1 w-[370px] h-[100%] px-[10px] flex flex-col justify-center items-start gap-[20px_0px] my-[15px] py-[25px]">
+        <div class="flex justify-start items-center gap-[20px]">
+          <div class="profile_img"><img src="./photo/p1.svg" alt=""></div>
+          <div class="">
+            <div class="text-2xl font-bold">KHALIL NAZIR</div>
+            <div class="text-[19px] text-[#888A9A]">CEO of UI.Desk</div>
+          </div>
+        </div>
+        <div class="text-xl text-[#181D19] text-center">
+          Thirty for remove plenty regard you summer though. He preference Partiality on or continuing in particular principles as. Do believing oh disposing to supported allowance we.
+        </div>
+      </div>
+      <div class="card1 w-[370px] h-[100%] px-[10px] flex flex-col justify-center items-start gap-[20px_0px] my-[15px] py-[25px]">
+        <div class="flex justify-start items-center gap-[20px]">
+          <div class="profile_img"><img src="./photo/p2.svg" alt=""></div>
+          <div class="">
+            <div class="text-2xl font-bold">ZEESHAN ANWER</div>
+            <div class="text-[19px] text-[#888A9A]">CEO of UI Box</div>
+          </div>
+        </div>
+        <div class="text-xl text-[#181D19] text-center">
+          Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush. Merits behind on afraid or warmly.
+        </div>
+      </div>
+
+     </div>
+    <!-- Section 11 -->
+
+    <!-- Section 12 -->
+    <div class="w-full h-auto py-[20px] flex justify-center items-center flex-col gap-[10px] my-[20px]">
+      <div class="text-4xl font-bold text-center">Subscribe to the Newsletter</div>
+      <div class="text-[#3B433E] text-center text-xl px-[20px] font-semibold">Enter your email below to get our daily offers and news</div>
+     </div>
+    <!-- Section 12 -->
+
+    <!-- Section 13 -->
+     <div class="w-full h-auto py-[30px]  flex justify-center items-center">
+      <div class="card1 sm:w-[80%] md:w-[70%] lg:w-[50%]  h-[60px] flex justify-center items-center rounded-[50px] pr-[5px] mx-[10px]">
+
+        <div class="sm:w-[50%] md:w-[60%] lg:w-[80%] h-[100%] flex justify-center items-center"><input type="text" placeholder="Enter your email." class="w-[100%] h-[100%] bg-transparent border-none outline-none pl-[20px]"></div>
+        <div class="sm:w-[50%] md:w-[40%] lg:w-[20%] h-[100%] flex sm:justify-end lg:justify-center items-center">
+          <div class="btn1 w-[130px] h-auto py-[10px] flex justify-center items-center rounded-[50px] text-white">Get Started</div>
+        </div>
+     
+      </div>
+     </div>
+    <!-- Section 13 -->
+
+    <!-- Section 14 -->
+     <div class="foot w-full h-auto my-[20px] py-[15px]  flex justify-center items-center flex-wrap gap-[30px_30px]">
+      <div class="w-[340px] px-[10px] h-auto py-[20px] flex justify-center items-start flex-col gap-[20px_40px] p-[10px_20px] mx-[15px]">
+        <div class=""><img src="./photo/nav_Icon.svg" alt=""></div>
+        <div class="text-xl text-[#657582]">
+          On formed merits hunted unable merely by mr whence or. 
+        </div>
+      </div>
+   <div class="w-auto h-auto py-[20px] px-[20px] flex justify-center items-start flex-col gap-[10px_40px] p-[10px_20px] text-[#657582] text-xl mx-[15px]">
+
+    <div class="text-black font-semibold text-2xl">Home</div>
+    <div class="">Company</div>
+    <div class="">News</div>
+    <div class="">Team</div>
+
+   </div>
+   <div class="w-auto h-auto py-[20px] px-[20px] flex justify-center items-start flex-col gap-[10px_40px] p-[10px_20px] text-[#657582] text-xl mx-[15px]">
+
+    <div class="text-black font-semibold text-2xl">About</div>
+    <div class="">History</div>
+    <div class="">Service</div>
+    <div class="">Pricing</div>
+
+   </div>
+   <div class="w-auto h-auto py-[20px] px-[10px] flex justify-center items-start flex-col gap-[10px_40px] p-[10px_3px] text-[#657582] text-xl mx-[5px]">
+
+    <div class="text-black font-semibold text-2xl">Partner</div>
+    <div class="">Business</div>
+    <div class="">Plan</div>
+    <div class="">Marketing</div>
+
+   </div>
+   <div class="w-auto h-auto py-[20px] px-[10px] flex justify-center items-start flex-col gap-[10px_40px] p-[10px_3px] text-[#657582] text-xl mx-[5px]">
+
+    <div class="text-black font-semibold text-2xl">Contact</div>
+    <div class="">UI.desk</div>
+    <div class="">(465)954-8487</div>
+    <div class="">Lahore, Pakistan</div>
+
+   </div>
+
+     </div>
+    <!-- Section 14 -->
+
+    <!-- Section 15 -->
+    <div class="btn1 w-full h-auto py-[25px] mt-[30px] text-white flex justify-center items-center text-xl text-center  px-[20px]">
+      © Copyright 2020 by ui.desk. All right reserved.
+    </div>
+    <!-- Section 15 -->
+</body>
+<script>
+  jQuery.noConflict();
+  jQuery(document).ready(function($){
+    $(".side_nav").hide();
+
+
+    $(".ri-function-line").click(function(){
+      $(".side_nav").slideToggle();
+      $(this).toggleClass("ri-function-line ri-function-fill");
+    })
+  })
+</script>
+</html>
